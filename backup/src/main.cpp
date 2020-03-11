@@ -167,12 +167,12 @@ void autonomunch(){
 bool blue = false;
 int tig = 1;
 hClaw(50);
-forWard(1,100);
+//forWard(1,100);
 vex::task::sleep(1000);
-go(0,0);
-forWard(1,-100);
+//go(0,0);
+//forWard(1,-100);
 vex::task::sleep(1100);
-go(0,0);
+//go(0,0);
 hClaw(-50);
 
 vex::task::sleep(1000);
@@ -180,15 +180,16 @@ vex::task::sleep(1000);
 clawH.setBrake(hold);
 hClaw(0);
 goClaw(60);
+forWard(1,-100);
 vex::task::sleep(600);
 hClaw(-50);
 vex::task::sleep(1000);
 go(0,0);
 hClaw(0);
 clawH.setBrake(coast);
-goClaw(68);
+goClaw(69);
 vex::task::sleep(200);
-forWard(2450,200);
+forWard(2460,200);
 goClaw(0);
 go(0,0);
 if(blue){
