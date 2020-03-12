@@ -417,20 +417,22 @@ else{
 }
 
      //contra test
-     /*
+     Contra.Screen.clearScreen();
+     Contra.Screen.setCursor(1,1);
      if(turbo == 3 && pepper == 3){
+       
   Contra.Screen.print("salt and pepper");
      }
      else if(turbo == 3){
-         Contra.Screen.print("turbo    ");
+         Contra.Screen.print("turbo       ");
      }
      else if(pepper == 3){
-         Contra.Screen.print("slowbo   ");
+         Contra.Screen.print("slowbo      ");
      }
      else{
-         Contra.Screen.print("base     ");
+         Contra.Screen.print("base       ");
      }
-*/
+
 
 
 
@@ -470,7 +472,7 @@ hClaw(0);
        stacker.spin(vex::directionType::fwd);
        clawL.setBrake(coast);
        clawR.setBrake(coast);
-       Contra.Screen.print("%d", stacker.rotation(rotationUnits::deg));
+     //  Contra.Screen.print("%d", stacker.rotation(rotationUnits::deg));
 }
       
       else if(Contra.Axis2.value() <20){
@@ -478,7 +480,7 @@ hClaw(0);
       stacker.spin(vex::directionType::fwd);
        clawL.setBrake(coast);
         clawR.setBrake(coast);
-        Contra.Screen.print("%d", stacker.rotation(rotationUnits::deg));
+  //      Contra.Screen.print("%d", stacker.rotation(rotationUnits::deg));
       }
       else{
         stacker.setVelocity(0, vex::velocityUnits::pct);
